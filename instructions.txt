@@ -1,0 +1,74 @@
+GOOGLE CONTACTS CSV GENERATOR - INSTRUCTIONS
+
+STEP 1: Create a Google Form
+
+Create a Google Form with the following fields:
+
+1. Name (Short Answer)
+2. Phone Number (Short Answer)
+
+---
+
+STEP 2: Collect Responses
+
+Share the form with participants.
+
+---
+
+STEP 3: Download Responses as CSV
+
+1. Open the linked Google Sheet.
+2. Click File → Download → CSV.
+3. Save the file as:
+
+students.csv
+
+Expected format:
+
+name,phone number
+Student One,9000000001
+Student Two,9000000002
+
+---
+
+STEP 4: Configure the Script
+
+Update the suffix value:
+
+suffix="1A-26-27"
+
+Example output names:
+
+Student One-1A-26-27
+Student Two-1A-26-27
+
+You may also change:
+
+country_code="+91"
+
+if required.
+
+---
+
+STEP 5: Run the Script
+
+python main.py
+
+---
+
+STEP 6: Import into Google Contacts
+
+1. Open Google Contacts.
+2. Click Import.
+3. Select google_contacts.csv.
+4. Click Import.
+
+---
+
+OUTPUT
+
+The script generates:
+
+google_contacts.csv
+
+which is compatible with Google Contacts import.
